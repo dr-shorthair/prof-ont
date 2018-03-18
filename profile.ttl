@@ -14,9 +14,10 @@
                                           dc:description "This is an RDF/OWL Ontology for describing relationships between Specifications, implementing profiles and supporting artefacts" ;
                                           dct:contributor <http://orcid.org/0000-0002-8742-7730> ;
                                           dct:modified "2018-03-18"^^xsd:date ;
+                                          rdfs:label "Profiles Ontology"@en ;
                                           rdfs:comment "This model provides a canonical vocabulary for describing profiling relationships between http://dublincore.org/2012/06/14/dcterms#Standard entities and attachment of resources defining additional constraints"@en ;
-                                          dc:creator "Rob Atkinson"^^xsd:string ;
                                           dc:contributor "Nicholas Car"^^xsd:string ;
+                                          dc:creator "Rob Atkinson"^^xsd:string ;
                                           dct:created "2018-02-16"^^xsd:date .
 
 #################################################################
