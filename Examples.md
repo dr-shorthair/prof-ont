@@ -19,3 +19,13 @@ DCAT 1.1 extends DCAT 1.0's handling of licenses by allowing a super property of
 * `EUDM Datasets`, when viewed natively (i.e. no compatability mode) must have at least one `Distribution` and each `Distribution` must have an `agr:Agreements` class object (subclass of `odrl:Policy`) indicated using `odrl:hasPolicy`
  * additionally, the `agr:Agreements` object must come from the controlled Agreements Register maintained by the [Australian Government Linked Data Working Group](http://linked.data.gov.au)
 * *more to come...*
+
+
+### EUDM restrictions on PROV provenance
+`EUDM Dataset`s will be speciated and each species will have certain expecatations placed on it by way of a PROV profile. The species of `EUDM Dataset` (which is a subclass of `prov:Entity`) are:
+
+* `EUDM External Dataset`
+* `EUDM Source Dataset`
+* `EUDM Product Dataset`
+
+`EUDM Product Dataset` have the requirement on them that they must be derived from (`prov:wasDerivedFrom` or equivalent) at least one `EUDM External Dataset` or `EUDM Source Dataset`.
